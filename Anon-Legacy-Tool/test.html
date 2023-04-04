@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="giftInput" placeholder="Enter gift value">
+<button class="btnred" id="calculateButton">Calculate</button>
+<script>
+    // Get a reference to the Calculate button element
+const calculateButton = document.getElementById('calculateButton');
+
+// Add a click event listener to the Calculate button
+calculateButton.addEventListener('click', function() {
+  // Get the value entered in the Gift Input field
+  const giftValue = document.getElementById('giftInput').value;
+
+  // Log the gift value to the console
+  console.log(`Gift Value: ${giftValue}`);
+});
+
+</script>
+</body>
+</html>
